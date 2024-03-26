@@ -1,10 +1,15 @@
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./App.styled";
 import Home from "./pages/home/Home";
+import { THEME } from "./utils/theme";
+
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={THEME}>
+      <GlobalStyles/>
       <Home/>
-    </div>
+    </ThemeProvider>
   );
 }
 
