@@ -2,15 +2,16 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./App.styled";
 import Home from "./pages/home/Home";
 import { THEME } from "./utils/theme";
+import { useState } from "react";
 
 
 function App() {
+  const [currentTheme,setCurrentTheme] = useState('light')
   return (
-    <ThemeProvider theme={THEME}>
+    <ThemeProvider theme={THEME[currentTheme]}>
       <GlobalStyles/>
       <Home/>
     </ThemeProvider>
   );
 }
-
 export default App;

@@ -6,6 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     border:none;
     box-sizing: border-box !important;
-    background-color: #000;
+    background-color: ${(props) => props.theme.background};
   }
 `
