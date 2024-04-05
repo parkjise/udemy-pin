@@ -1,4 +1,4 @@
 export const THEME = {
-  light:{background:"#ffffff"},
-  dark:{background:"#000"}
+  light:{background:"#ffffff",textColor:"#000"},
+  dark:{background:"#000",textColor:"#fff"}
 }
