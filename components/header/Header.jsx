@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkContainer, LogoContainer, StyledHeader, StyledLink } from './Header.styled'
+import {AuthButtonsContainer,AuthButton, LinkContainer, LogoContainer, StyledHeader, StyledLink } from './Header.styled'
 import {FaPinterest} from 'react-icons/fa'
 import { Text } from '../../utils/Text.styled'
 
@@ -14,6 +14,10 @@ const Header = () => {
         <StyledLink as="a" href='#'>Home</StyledLink>
         <StyledLink as="a" href='#'>Business</StyledLink>
         <StyledLink as="a" href='#'>Blog</StyledLink>
+        <AuthButtonsContainer>
+          <AuthButton type="highlight">Log in</AuthButton>
+          <AuthButton>Sign up</AuthButton>
+        </AuthButtonsContainer>
       </LinkContainer>
     </StyledHeader>
   )

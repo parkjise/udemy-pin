@@ -1,4 +1,5 @@
-import styled from "styled-components";
+/* eslint-disable no-undef */
+import styled,{css} from "styled-components";
 import { Text } from "../../utils/Text.styled";
 
 export const StyledHeader = styled.div`
@@ -29,3 +30,25 @@ export const StyledLink = styled(Text)`
     text-decoration: underline;
   }
 `;
+
+export const AuthButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+`;
+
+export const AuthButton = styled(Text)`
+  /* background-color: ${(props) => props.color || "#efefef"};
+  color:${(props) => props.color ? "white" : "black"}; */
+  padding: 0.7rem;
+  border-radius: 100rem;
+  ${({type}) => 
+  type ==="highlight" && 
+  css`
+    background-color:#e60022;
+    color:white;
+  `}
+  &:hover{
+    cursor: pointer;
+  }
+`
