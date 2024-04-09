@@ -9,6 +9,8 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 1.4rem 1rem 0 1.8rem;
+  position: absolute;
+  top: 0;
 `;
 
 export const LogoContainer = styled.div`
