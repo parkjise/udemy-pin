@@ -5,17 +5,17 @@ import Header from '../../components/header/Header'
 import Body from '../../components/body/Body'
 
 
-const Home = () => {
+const Home = (toggleTheme) => {
   
   return (
     <StyledHome>
       <div>
         <Header/>
-        <Body/>
+        <Body toggleTheme={toggleTheme}/>
       </div>
       <Footer/>
     </StyledHome>
   )
 }
 
-export default Home
+export default Home;

@@ -39,6 +39,11 @@ export const AuthButtonsContainer = styled.div`
   gap:.5rem;
 `;
 
+const highlightStyle = css`
+  background-color:#e60022;
+  color: white;
+`;
+
 export const AuthButton = styled(Text)`
   /* background-color: ${(props) => props.color || "#efefef"};
   color:${(props) => props.color ? "white" : "black"}; */
